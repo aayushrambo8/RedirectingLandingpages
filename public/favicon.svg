@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="64" height="64">
+  <defs>
+    <!-- High-Voltage Bright Gradients (0% Purple) -->
+    <linearGradient id="cursorBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+
+    <linearGradient id="spinnerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5500" />
+      <stop offset="40%" stop-color="#FFD600" />
+      <stop offset="80%" stop-color="#D4FF00" />
+      <stop offset="100%" stop-color="#0052FF" />
+    </linearGradient>
+
+    <filter id="shadow" x="-20%" y="-20%" width="150%" height="150%">
+      <feDropShadow dx="1" dy="1.5" stdDeviation="1" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .loading-ring {
+      transform-origin: 21px 21px;
+      animation: spin 0.9s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+    .loading-pulse {
+      transform-origin: 21px 21px;
+      animation: spin 1.8s linear infinite reverse;
+    }
+  </style>
+
+  <!-- BACKGROUND SPINNER: Rotating Loading Circle at (21, 21) -->
+  <g class="loading-ring">
+    <!-- Spinning Arc Track -->
+    <circle 
+      cx="21" 
+      cy="21" 
+      r="7" 
+      fill="none" 
+      stroke="#FF5500" 
+      stroke-width="2.6" 
+      stroke-linecap="round"
+      stroke-dasharray="28 14"
+    />
+    <!-- Accent Lead Dot -->
+    <circle 
+      cx="28" 
+      cy="21" 
+      r="1.8" 
+      fill="#D4FF00" 
+      stroke="#000000" 
+      stroke-width="0.6"
+    />
+  </g>
+
+  <!-- Secondary Counter-Ring for Maximalist Detail -->
+  <g class="loading-pulse">
+    <circle 
+      cx="21" 
+      cy="21" 
+      r="4" 
+      fill="none" 
+      stroke="#0052FF" 
+      stroke-width="1.6" 
+      stroke-dasharray="10 8" 
+      stroke-linecap="round"
+    />
+  </g>
+
+  <!-- Glowing Core -->
+  <circle cx="21" cy="21" r="1.6" fill="#FFD600" />
+
+  <!-- CLASSIC COMPUTING ARROW CURSOR -->
+  <!-- Crisp Black Outline for high contrast on any tab background -->
+  <path 
+    d="M 3,2 L 3,21 L 7.5,16.5 L 11,24 L 14.2,22.4 L 10.7,15 L 17.5,15 Z" 
+    fill="url(#cursorBody)" 
+    stroke="#0a0c10" 
+    stroke-width="2" 
+    stroke-linejoin="round"
+    stroke-linecap="round"
+    filter="url(#shadow)"
+  />
+
+  <!-- Internal Sleek Bevel Line -->
+  <path 
+    d="M 4,4 L 4,18 L 7.5,14.5 L 10.5,21.5" 
+    fill="none" 
+    stroke="#FFFFFF" 
+    stroke-width="1" 
+    opacity="0.85"
+  />
+</svg>

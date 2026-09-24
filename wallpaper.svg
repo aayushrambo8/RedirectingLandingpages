@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+<defs>
+  <!-- Solar & Electric Gradients -->
+  <linearGradient id="solarGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#FF5500" stop-opacity="0.85" />
+    <stop offset="60%" stop-color="#FF2A3A" stop-opacity="0.7" />
+    <stop offset="100%" stop-color="#FFD600" stop-opacity="0.2" />
+  </linearGradient>
+
+  <linearGradient id="cobaltSweep" x1="100%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#0052FF" stop-opacity="0.8" />
+    <stop offset="60%" stop-color="#0038D1" stop-opacity="0.6" />
+    <stop offset="100%" stop-color="#00E599" stop-opacity="0.2" />
+  </linearGradient>
+
+  <linearGradient id="acidLimeGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#D4FF00" stop-opacity="0.9" />
+    <stop offset="100%" stop-color="#FFD600" stop-opacity="0.6" />
+  </linearGradient>
+
+  <linearGradient id="stripeSolar" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#FF5500" />
+    <stop offset="50%" stop-color="#FFD600" />
+    <stop offset="100%" stop-color="#D4FF00" />
+  </linearGradient>
+
+  <!-- Dot Matrix Pattern -->
+  <pattern id="dotGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+    <circle cx="16" cy="16" r="1.5" fill="#FFFFFF" fill-opacity="0.08" />
+    <circle cx="16" cy="16" r="0.75" fill="#D4FF00" fill-opacity="0.3" />
+  </pattern>
+
+  <!-- Fine Technical Grid -->
+  <pattern id="techGrid" width="64" height="64" patternUnits="userSpaceOnUse">
+    <path d="M 64 0 L 0 0 0 64" fill="none" stroke="#FFFFFF" stroke-width="0.7" stroke-opacity="0.06" />
+    <circle cx="0" cy="0" r="2" fill="#FF5500" fill-opacity="0.3" />
+  </pattern>
+
+  <!-- Diagonal Hazard / Caution Pattern -->
+  <pattern id="hazardPattern" width="28" height="28" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+    <line x1="0" y1="0" x2="0" y2="28" stroke="#FF5500" stroke-width="12" stroke-opacity="0.25" />
+    <line x1="14" y1="0" x2="14" y2="28" stroke="#D4FF00" stroke-width="12" stroke-opacity="0.25" />
+  </pattern>
+
+  <!-- Dither Halftone Pattern -->
+  <pattern id="halftone" width="16" height="16" patternUnits="userSpaceOnUse">
+    <circle cx="8" cy="8" r="3" fill="#0052FF" fill-opacity="0.12" />
+    <circle cx="2" cy="2" r="1" fill="#FFD600" fill-opacity="0.15" />
+  </pattern>
+</defs>
+<rect width="1920" height="1080" fill="#0A0C10" />
+<circle cx="350" cy="250" r="420" fill="url(#solarGlow)" opacity="0.35" filter="blur(80px)" />
+<circle cx="1600" cy="850" r="500" fill="url(#cobaltSweep)" opacity="0.4" filter="blur(90px)" />
+<circle cx="1100" cy="200" r="320" fill="#D4FF00" opacity="0.12" filter="blur(100px)" />
+<circle cx="150" cy="950" r="380" fill="#FF2A3A" opacity="0.2" filter="blur(80px)" />
+<rect width="1920" height="1080" fill="url(#techGrid)" />
+<rect width="1920" height="1080" fill="url(#dotGrid)" />
+<g opacity="0.85">
+  <path d="M -50 -50 L 520 -50 A 570 570 0 0 1 -50 520 Z" fill="none" stroke="#FF5500" stroke-width="2.5" />
+  <path d="M -50 -50 L 460 -50 A 510 510 0 0 1 -50 460 Z" fill="none" stroke="#FFD600" stroke-width="1.5" stroke-dasharray="12 8" />
+  <path d="M -50 -50 L 380 -50 A 430 430 0 0 1 -50 380 Z" fill="none" stroke="#D4FF00" stroke-width="3" stroke-dasharray="40 20" />
+  <circle cx="-50" cy="-50" r="280" fill="#FF5500" fill-opacity="0.08" />
+</g>
+<g transform="translate(1480, 380)" opacity="0.9">
+  <circle cx="0" cy="0" r="320" fill="none" stroke="#0052FF" stroke-width="2" stroke-opacity="0.6" />
+  <circle cx="0" cy="0" r="280" fill="none" stroke="#D4FF00" stroke-width="1.5" stroke-dasharray="8 12" stroke-opacity="0.7" />
+  <circle cx="0" cy="0" r="230" fill="none" stroke="#FF5500" stroke-width="4" stroke-dasharray="80 30" stroke-opacity="0.85" />
+  <circle cx="0" cy="0" r="170" fill="none" stroke="#FFD600" stroke-width="1" stroke-dasharray="4 6" />
+  <circle cx="0" cy="0" r="110" fill="url(#halftone)" stroke="#0052FF" stroke-width="2" />
+  <circle cx="0" cy="0" r="45" fill="#FF5500" fill-opacity="0.25" stroke="#FF5500" stroke-width="2" />
+  <circle cx="0" cy="0" r="8" fill="#D4FF00" />
+  <line x1="305.0" y1="0.0" x2="328.0" y2="0.0" stroke="#FFD600" stroke-width="1.8" stroke-opacity="0.8" />
+  <line x1="301.4" y1="80.8" x2="316.8" y2="84.9" stroke="#FFFFFF" stroke-width="1.8" stroke-opacity="0.3" />
+  <line x1="270.2" y1="156.0" x2="284.1" y2="164.0" stroke="#FFFFFF" stroke-width="1.8" stroke-opacity="0.3" />
+  <line x1="215.7" y1="215.7" x2="231.9" y2="231.9" stroke="#FFD600" stroke-width="1.8" stroke-opacity="0.8" />
+  <line x1="156.0" y1="270.2" x2="164.0" y2="284.1" stroke="#FFFFFF" stroke-width="1.8" stroke-opacity="0.3" />
+  <line x1="80.8" y1="301.4" x2="84.9" y2="316.8" stroke="#FFFFFF" stroke-width="1.8" stroke-opacity="0.3" />
+  <line x1="0.0" y1="305.0" x2="0.0" y2="328.0" stroke="#FFD600" stroke-width="1.8" stroke-opacity="0.8" />
+  <line x1="-80.8" y1="301.4" x2="-84.9" y2="316.8" stroke="#FFFFFF" stroke-width="1.8" stroke-opacity="0.3" />
+  <line x1="-156.0" y1="270.2" x2="-164.0" y2="284.1" stroke="#FFFFFF" stroke-width="1.8" stroke-opacity="0.3" />
+  <line x1="-215.7" y1="215.7" x2="-231.9" y2="231.9" stroke="#FFD600" stroke-width="1.8" stroke-opacity="0.8" />
+  <line x1="-270.2" y1="156.0" x2="-284.1" y2="164.0" stroke="#FFFFFF" stroke-width="1.8" stroke-opacity="0.3" />
+  <line x1="-301.4" y1="80.8" x2="-316.8" y2="84.9" stroke="#FFFFFF" stroke-width="1.8" stroke-opacity="0.3" />
+  <line x1="-305.0" y1="0.0" x2="-328.0" y2="0.0" stroke="#FFD600" stroke-width="1.8" stroke-opacity="0.8" />
+  <line x1="-301.4" y1="-80.8" x2="-316.8" y2="-84.9" stroke="#FFFFFF" stroke-width="1.8" stroke-opacity="0.3" />
+  <line x1="-270.2" y1="-156.0" x2="-284.1" y2="-164.0" stroke="#FFFFFF" stroke-width="1.8" stroke-opacity="0.3" />
+  <line x1="-215.7" y1="-215.7" x2="-231.9" y2="-231.9" stroke="#FFD600" stroke-width="1.8" stroke-opacity="0.8" />
+  <line x1="-156.0" y1="-270.2" x2="-164.0" y2="-284.1" stroke="#FFFFFF" stroke-width="1.8" stroke-opacity="0.3" />
+  <line x1="-80.8" y1="-301.4" x2="-84.9" y2="-316.8" stroke="#FFFFFF" stroke-width="1.8" stroke-opacity="0.3" />
+  <line x1="-0.0" y1="-305.0" x2="-0.0" y2="-328.0" stroke="#FFD600" stroke-width="1.8" stroke-opacity="0.8" />
+  <line x1="80.8" y1="-301.4" x2="84.9" y2="-316.8" stroke="#FFFFFF" stroke-width="1.8" stroke-opacity="0.3" />
+  <line x1="156.0" y1="-270.2" x2="164.0" y2="-284.1" stroke="#FFFFFF" stroke-width="1.8" stroke-opacity="0.3" />
+  <line x1="215.7" y1="-215.7" x2="231.9" y2="-231.9" stroke="#FFD600" stroke-width="1.8" stroke-opacity="0.8" />
+  <line x1="270.2" y1="-156.0" x2="284.1" y2="-164.0" stroke="#FFFFFF" stroke-width="1.8" stroke-opacity="0.3" />
+  <line x1="301.4" y1="-80.8" x2="316.8" y2="-84.9" stroke="#FFFFFF" stroke-width="1.8" stroke-opacity="0.3" />
+</g>
+<g opacity="0.65">
+  <!-- Diagonal Stripe Bar at Bottom Left -->
+  <polygon points="40,1040 380,700 440,700 100,1040" fill="url(#hazardPattern)" stroke="#FF5500" stroke-width="1.5" />
+  <line x1="30" y1="1050" x2="370" y2="710" stroke="#D4FF00" stroke-width="2" />
+  <line x1="110" y1="1050" x2="450" y2="710" stroke="#0052FF" stroke-width="2" />
+</g>
+<g opacity="0.8">
+      <polygon points="920,839.22 990,879.61 920,920 850,879.61" fill="#FF5500" fill-opacity="0.36000000000000004" stroke="#D4FF00" stroke-width="1.5" />
+      <polygon points="850,879.61 920,920 920,1000.78 850,960.39" fill="#0052FF" fill-opacity="0.2" stroke="#D4FF00" stroke-width="1.5" />
+      <polygon points="920,920 990,879.61 990,960.39 920,1000.78" fill="#FF5500" fill-opacity="0.13999999999999999" stroke="#D4FF00" stroke-width="1.5" />
+    </g>
+<g opacity="0.8">
+      <polygon points="1040,798.07 1085,824.035 1040,850 995,824.035" fill="#0052FF" fill-opacity="0.45" stroke="#FFD600" stroke-width="1.5" />
+      <polygon points="995,824.035 1040,850 1040,901.93 995,875.965" fill="#0052FF" fill-opacity="0.25" stroke="#FFD600" stroke-width="1.5" />
+      <polygon points="1040,850 1085,824.035 1085,875.965 1040,901.93" fill="#0052FF" fill-opacity="0.175" stroke="#FFD600" stroke-width="1.5" />
+    </g>
+<g opacity="0.8">
+      <polygon points="820,812.3 870,841.15 820,870 770,841.15" fill="#FF2A3A" fill-opacity="0.36000000000000004" stroke="#0052FF" stroke-width="1.5" />
+      <polygon points="770,841.15 820,870 820,927.7 770,898.85" fill="#0052FF" fill-opacity="0.2" stroke="#0052FF" stroke-width="1.5" />
+      <polygon points="820,870 870,841.15 870,898.85 820,927.7" fill="#FF2A3A" fill-opacity="0.13999999999999999" stroke="#0052FF" stroke-width="1.5" />
+    </g>
+<g opacity="0.4">
+  <path d="M 0 520 L 0 535.0 L 40 538.0 L 80 539.8 L 120 540.6 L 160 540.4 L 200 539.5 L 240 538.1 L 280 536.6 L 320 535.3 L 360 534.3 L 400 533.8 L 440 534.1 L 480 535.1 L 520 536.8 L 560 539.1 L 600 541.9 L 640 544.7 L 680 547.5 L 720 549.8 L 760 551.3 L 800 551.9 L 840 551.3 L 880 549.3 L 920 546.0 L 960 541.4 L 1000 535.5 L 1040 528.8 L 1080 521.4 L 1120 513.7 L 1160 506.1 L 1200 498.9 L 1240 492.6 L 1280 487.3 L 1320 483.4 L 1360 480.9 L 1400 479.9 L 1440 480.4 L 1480 482.2 L 1520 485.1 L 1560 488.9 L 1600 493.2 L 1640 497.6 L 1680 502.0 L 1720 505.9 L 1760 509.3 L 1800 511.8 L 1840 513.5 L 1880 514.4" fill="none" stroke="#FF5500" stroke-width="1.2" stroke-opacity="0.45" />
+  <path d="M 0 536 L 0 564.2 L 40 567.3 L 80 569.0 L 120 569.4 L 160 568.7 L 200 567.2 L 240 565.0 L 280 562.5 L 320 559.9 L 360 557.7 L 400 555.9 L 440 554.7 L 480 554.1 L 520 554.3 L 560 555.0 L 600 556.1 L 640 557.4 L 680 558.7 L 720 559.5 L 760 559.7 L 800 559.0 L 840 557.3 L 880 554.3 L 920 550.2 L 960 544.9 L 1000 538.6 L 1040 531.6 L 1080 524.1 L 1120 516.5 L 1160 509.2 L 1200 502.5 L 1240 496.8 L 1280 492.3 L 1320 489.3 L 1360 488.0 L 1400 488.3 L 1440 490.1 L 1480 493.4 L 1520 497.8 L 1560 503.1 L 1600 509.0 L 1640 515.1 L 1680 521.0 L 1720 526.5 L 1760 531.3 L 1800 535.2 L 1840 538.2 L 1880 540.2" fill="none" stroke="#D4FF00" stroke-width="1.2" stroke-opacity="0.45" />
+  <path d="M 0 552 L 0 594.3 L 40 596.6 L 80 597.5 L 120 596.9 L 160 594.9 L 200 592.0 L 240 588.3 L 280 584.2 L 320 580.0 L 360 576.0 L 400 572.4 L 440 569.4 L 480 567.2 L 520 565.6 L 560 564.7 L 600 564.2 L 640 564.1 L 680 564.0 L 720 563.7 L 760 562.9 L 800 561.4 L 840 559.1 L 880 555.7 L 920 551.4 L 960 546.1 L 1000 540.1 L 1040 533.5 L 1080 526.6 L 1120 519.9 L 1160 513.6 L 1200 508.0 L 1240 503.7 L 1280 500.7 L 1320 499.3 L 1360 499.6 L 1400 501.6 L 1440 505.2 L 1480 510.3 L 1520 516.5 L 1560 523.5 L 1600 531.1 L 1640 538.7 L 1680 546.1 L 1720 552.9 L 1760 558.9 L 1800 563.8 L 1840 567.7 L 1880 570.4" fill="none" stroke="#0052FF" stroke-width="1.2" stroke-opacity="0.45" />
+  <path d="M 0 568 L 0 622.1 L 40 623.1 L 80 622.4 L 120 620.0 L 160 616.3 L 200 611.5 L 240 605.8 L 280 599.8 L 320 593.6 L 360 587.7 L 400 582.2 L 440 577.5 L 480 573.6 L 520 570.5 L 560 568.2 L 600 566.6 L 640 565.5 L 680 564.6 L 720 563.7 L 760 562.6 L 800 561.0 L 840 558.8 L 880 555.9 L 920 552.2 L 960 547.7 L 1000 542.7 L 1040 537.3 L 1080 531.9 L 1120 526.7 L 1160 522.1 L 1200 518.4 L 1240 515.9 L 1280 514.8 L 1320 515.4 L 1360 517.7 L 1400 521.6 L 1440 527.1 L 1480 533.9 L 1520 541.8 L 1560 550.4 L 1600 559.3 L 1640 568.2 L 1680 576.6 L 1720 584.2 L 1760 590.8 L 1800 596.1 L 1840 600.0 L 1880 602.6" fill="none" stroke="#FF5500" stroke-width="1.2" stroke-opacity="0.45" />
+  <path d="M 0 584 L 0 645.0 L 40 643.9 L 80 641.1 L 120 636.6 L 160 630.7 L 200 623.7 L 240 616.0 L 280 608.0 L 320 600.0 L 360 592.3 L 400 585.3 L 440 579.1 L 480 574.0 L 520 570.0 L 560 567.0 L 600 564.9 L 640 563.6 L 680 562.7 L 720 562.2 L 760 561.6 L 800 560.8 L 840 559.6 L 880 557.9 L 920 555.6 L 960 552.8 L 1000 549.6 L 1040 546.1 L 1080 542.7 L 1120 539.6 L 1160 537.1 L 1200 535.6 L 1240 535.2 L 1280 536.2 L 1320 538.8 L 1360 543.0 L 1400 548.7 L 1440 555.8 L 1480 564.0 L 1520 573.1 L 1560 582.7 L 1600 592.4 L 1640 601.8 L 1680 610.4 L 1720 618.1 L 1760 624.4 L 1800 629.2 L 1840 632.4 L 1880 634.0" fill="none" stroke="#D4FF00" stroke-width="1.2" stroke-opacity="0.45" />
+  <path d="M 0 600 L 0 660.5 L 40 657.1 L 80 651.9 L 120 645.2 L 160 637.3 L 200 628.3 L 240 618.8 L 280 609.2 L 320 599.7 L 360 590.9 L 400 582.9 L 440 576.2 L 480 570.7 L 520 566.5 L 560 563.7 L 600 562.1 L 640 561.4 L 680 561.6 L 720 562.3 L 760 563.2 L 800 564.1 L 840 564.7 L 880 565.0 L 920 564.9 L 960 564.3 L 1000 563.4 L 1040 562.2 L 1080 561.1 L 1120 560.3 L 1160 560.1 L 1200 560.6 L 1240 562.3 L 1280 565.2 L 1320 569.4 L 1360 575.0 L 1400 581.9 L 1440 589.9 L 1480 598.9 L 1520 608.4 L 1560 618.2 L 1600 627.8 L 1640 636.7 L 1680 644.7 L 1720 651.4 L 1760 656.5 L 1800 659.9 L 1840 661.5 L 1880 661.3" fill="none" stroke="#0052FF" stroke-width="1.2" stroke-opacity="0.45" />
+  <path d="M 0 616 L 0 667.5 L 40 661.9 L 80 654.7 L 120 646.1 L 160 636.5 L 200 626.2 L 240 615.5 L 280 605.0 L 320 595.0 L 360 585.9 L 400 578.0 L 440 571.5 L 480 566.6 L 520 563.4 L 560 561.8 L 600 561.6 L 640 562.6 L 680 564.7 L 720 567.5 L 760 570.6 L 800 573.8 L 840 577.0 L 880 579.8 L 920 582.1 L 960 584.1 L 1000 585.6 L 1040 586.8 L 1080 588.0 L 1120 589.2 L 1160 590.9 L 1200 593.1 L 1240 596.2 L 1280 600.3 L 1320 605.4 L 1360 611.6 L 1400 618.9 L 1440 627.0 L 1480 635.6 L 1520 644.6 L 1560 653.5 L 1600 661.9 L 1640 669.5 L 1680 675.8 L 1720 680.7 L 1760 683.7 L 1800 684.9 L 1840 684.2 L 1880 681.5" fill="none" stroke="#FF5500" stroke-width="1.2" stroke-opacity="0.45" />
+  <path d="M 0 632 L 0 666.4 L 40 659.2 L 80 650.6 L 120 640.9 L 160 630.5 L 200 619.7 L 240 608.9 L 280 598.6 L 320 589.1 L 360 580.8 L 400 574.0 L 440 568.9 L 480 565.7 L 520 564.4 L 560 564.9 L 600 567.0 L 640 570.5 L 680 575.2 L 720 580.6 L 760 586.4 L 800 592.4 L 840 598.2 L 880 603.6 L 920 608.4 L 960 612.7 L 1000 616.4 L 1040 619.5 L 1080 622.4 L 1120 625.1 L 1160 627.9 L 1200 631.0 L 1240 634.6 L 1280 638.9 L 1320 643.9 L 1360 649.7 L 1400 656.1 L 1440 663.2 L 1480 670.5 L 1520 677.8 L 1560 684.9 L 1600 691.2 L 1640 696.5 L 1680 700.4 L 1720 702.6 L 1760 703.1 L 1800 701.6 L 1840 698.1 L 1880 692.8" fill="none" stroke="#D4FF00" stroke-width="1.2" stroke-opacity="0.45" />
+  <path d="M 0 648 L 0 659.4 L 40 651.4 L 80 642.5 L 120 632.8 L 160 622.7 L 200 612.6 L 240 602.8 L 280 593.8 L 320 585.9 L 360 579.5 L 400 574.9 L 440 572.2 L 480 571.5 L 520 572.9 L 560 576.2 L 600 581.2 L 640 587.6 L 680 595.1 L 720 603.4 L 760 612.0 L 800 620.5 L 840 628.7 L 880 636.3 L 920 643.1 L 960 649.1 L 1000 654.2 L 1040 658.4 L 1080 662.0 L 1120 665.2 L 1160 668.0 L 1200 670.8 L 1240 673.8 L 1280 677.2 L 1320 680.9 L 1360 685.1 L 1400 689.8 L 1440 694.7 L 1480 699.7 L 1520 704.5 L 1560 708.8 L 1600 712.4 L 1640 714.8 L 1680 715.8 L 1720 715.2 L 1760 712.8 L 1800 708.5 L 1840 702.4 L 1880 694.7" fill="none" stroke="#0052FF" stroke-width="1.2" stroke-opacity="0.45" />
+  <path d="M 0 664 L 0 649.8 L 40 642.3 L 80 634.3 L 120 625.8 L 160 617.3 L 200 609.0 L 240 601.4 L 280 594.7 L 320 589.5 L 360 585.8 L 400 584.1 L 440 584.4 L 480 586.9 L 520 591.3 L 560 597.7 L 600 605.6 L 640 614.9 L 680 625.1 L 720 635.9 L 760 646.7 L 800 657.2 L 840 667.1 L 880 676.0 L 920 683.9 L 960 690.5 L 1000 695.9 L 1040 700.1 L 1080 703.2 L 1120 705.5 L 1160 707.3 L 1200 708.6 L 1240 709.8 L 1280 711.0 L 1320 712.4 L 1360 714.1 L 1400 715.9 L 1440 718.0 L 1480 720.0 L 1520 721.7 L 1560 723.0 L 1600 723.4 L 1640 722.9 L 1680 721.0 L 1720 717.7 L 1760 712.8 L 1800 706.2 L 1840 698.1 L 1880 688.6" fill="none" stroke="#FF5500" stroke-width="1.2" stroke-opacity="0.45" />
+  <path d="M 0 680 L 0 642.0 L 40 636.3 L 80 630.4 L 120 624.3 L 160 618.4 L 200 613.0 L 240 608.4 L 280 604.9 L 320 602.8 L 360 602.5 L 400 604.0 L 440 607.6 L 480 613.1 L 520 620.5 L 560 629.6 L 600 640.1 L 640 651.7 L 680 663.9 L 720 676.2 L 760 688.3 L 800 699.8 L 840 710.2 L 880 719.3 L 920 726.9 L 960 732.9 L 1000 737.3 L 1040 740.1 L 1080 741.6 L 1120 741.8 L 1160 741.2 L 1200 740.0 L 1240 738.3 L 1280 736.6 L 1320 734.9 L 1360 733.3 L 1400 731.9 L 1440 730.6 L 1480 729.4 L 1520 728.0 L 1560 726.3 L 1600 724.0 L 1640 720.8 L 1680 716.7 L 1720 711.3 L 1760 704.6 L 1800 696.7 L 1840 687.6 L 1880 677.5" fill="none" stroke="#D4FF00" stroke-width="1.2" stroke-opacity="0.45" />
+  <path d="M 0 696 L 0 640.6 L 40 637.8 L 80 634.9 L 120 632.1 L 160 629.6 L 200 627.6 L 240 626.4 L 280 626.4 L 320 627.7 L 360 630.6 L 400 635.2 L 440 641.5 L 480 649.6 L 520 659.3 L 560 670.4 L 600 682.5 L 640 695.3 L 680 708.3 L 720 721.1 L 760 733.2 L 800 744.2 L 840 753.8 L 880 761.7 L 920 767.7 L 960 771.7 L 1000 773.8 L 1040 774.1 L 1080 772.7 L 1120 769.9 L 1160 766.0 L 1200 761.4 L 1240 756.4 L 1280 751.1 L 1320 746.0 L 1360 741.0 L 1400 736.4 L 1440 732.0 L 1480 727.9 L 1520 723.9 L 1560 719.9 L 1600 715.5 L 1640 710.7 L 1680 705.3 L 1720 699.0 L 1760 691.9 L 1800 683.9 L 1840 675.1 L 1880 665.7" fill="none" stroke="#0052FF" stroke-width="1.2" stroke-opacity="0.45" />
+</g>
+<g opacity="0.75">
+  <!-- Crosshair at (120, 100) -->
+  <line x1="106" y1="100" x2="134" y2="100" stroke="#D4FF00" stroke-width="1.4" />
+  <line x1="120" y1="86" x2="120" y2="114" stroke="#D4FF00" stroke-width="1.4" />
+  <circle cx="120" cy="100" r="6" fill="none" stroke="#FF5500" stroke-width="1" />
+  <rect x="102" y="82" width="36" height="36" fill="none" stroke="#FFFFFF" stroke-width="0.6" stroke-opacity="0.4" stroke-dasharray="3 3" />
+  <!-- Crosshair at (960, 80) -->
+  <line x1="946" y1="80" x2="974" y2="80" stroke="#D4FF00" stroke-width="1.4" />
+  <line x1="960" y1="66" x2="960" y2="94" stroke="#D4FF00" stroke-width="1.4" />
+  <circle cx="960" cy="80" r="6" fill="none" stroke="#FF5500" stroke-width="1" />
+  <rect x="942" y="62" width="36" height="36" fill="none" stroke="#FFFFFF" stroke-width="0.6" stroke-opacity="0.4" stroke-dasharray="3 3" />
+  <!-- Crosshair at (1800, 120) -->
+  <line x1="1786" y1="120" x2="1814" y2="120" stroke="#D4FF00" stroke-width="1.4" />
+  <line x1="1800" y1="106" x2="1800" y2="134" stroke="#D4FF00" stroke-width="1.4" />
+  <circle cx="1800" cy="120" r="6" fill="none" stroke="#FF5500" stroke-width="1" />
+  <rect x="1782" y="102" width="36" height="36" fill="none" stroke="#FFFFFF" stroke-width="0.6" stroke-opacity="0.4" stroke-dasharray="3 3" />
+  <!-- Crosshair at (140, 540) -->
+  <line x1="126" y1="540" x2="154" y2="540" stroke="#D4FF00" stroke-width="1.4" />
+  <line x1="140" y1="526" x2="140" y2="554" stroke="#D4FF00" stroke-width="1.4" />
+  <circle cx="140" cy="540" r="6" fill="none" stroke="#FF5500" stroke-width="1" />
+  <rect x="122" y="522" width="36" height="36" fill="none" stroke="#FFFFFF" stroke-width="0.6" stroke-opacity="0.4" stroke-dasharray="3 3" />
+  <!-- Crosshair at (1780, 680) -->
+  <line x1="1766" y1="680" x2="1794" y2="680" stroke="#D4FF00" stroke-width="1.4" />
+  <line x1="1780" y1="666" x2="1780" y2="694" stroke="#D4FF00" stroke-width="1.4" />
+  <circle cx="1780" cy="680" r="6" fill="none" stroke="#FF5500" stroke-width="1" />
+  <rect x="1762" y="662" width="36" height="36" fill="none" stroke="#FFFFFF" stroke-width="0.6" stroke-opacity="0.4" stroke-dasharray="3 3" />
+  <!-- Crosshair at (240, 960) -->
+  <line x1="226" y1="960" x2="254" y2="960" stroke="#D4FF00" stroke-width="1.4" />
+  <line x1="240" y1="946" x2="240" y2="974" stroke="#D4FF00" stroke-width="1.4" />
+  <circle cx="240" cy="960" r="6" fill="none" stroke="#FF5500" stroke-width="1" />
+  <rect x="222" y="942" width="36" height="36" fill="none" stroke="#FFFFFF" stroke-width="0.6" stroke-opacity="0.4" stroke-dasharray="3 3" />
+  <!-- Crosshair at (1720, 960) -->
+  <line x1="1706" y1="960" x2="1734" y2="960" stroke="#D4FF00" stroke-width="1.4" />
+  <line x1="1720" y1="946" x2="1720" y2="974" stroke="#D4FF00" stroke-width="1.4" />
+  <circle cx="1720" cy="960" r="6" fill="none" stroke="#FF5500" stroke-width="1" />
+  <rect x="1702" y="942" width="36" height="36" fill="none" stroke="#FFFFFF" stroke-width="0.6" stroke-opacity="0.4" stroke-dasharray="3 3" />
+</g>
+<g font-family="'JetBrains Mono', 'Courier New', monospace" font-size="11" font-weight="600" opacity="0.65" fill="#E2E8F0">
+  <!-- Top Bar Telemetry -->
+  <text x="120" y="60" fill="#FF5500">SYS_REV // 2026.MAXIMAL</text>
+  <text x="320" y="60" fill="#D4FF00">FREQ: 104.8 MHZ</text>
+  <text x="520" y="60" fill="#0052FF">CORE_STATE: HIGH_VOLTAGE</text>
+  <text x="1560" y="60" fill="#FFD600" text-anchor="end">DOMAIN: AAYUSHBABU.LIVE</text>
+  <text x="1800" y="60" fill="#FFFFFF" text-anchor="end">[ ONLINE ]</text>
+
+  <!-- Left Side Technical Rail -->
+  <g transform="translate(60, 400) rotate(-90)">
+    <text x="0" y="0" letter-spacing="4" fill="#FF5500">SUBDOMAIN GATEWAY &#8226; MULTI-SERVICE LAUNCHPAD &#8226; 0% PURPLE</text>
+  </g>
+
+  <!-- Right Side Technical Rail -->
+  <g transform="translate(1860, 750) rotate(90)">
+    <text x="0" y="0" letter-spacing="3" fill="#D4FF00">HIGH-VOLTAGE SOLAR PALETTE &#8226; EST 2026</text>
+  </g>
+
+  <!-- Giant Faint Watermark Text Behind Cards -->
+  <text x="960" y="340" font-family="'Space Grotesk', 'Impact', sans-serif" font-size="140" font-weight="900" 
+        fill="#FFFFFF" fill-opacity="0.03" text-anchor="middle" letter-spacing="16">
+    MAXIMAL
+  </text>
+  <text x="960" y="470" font-family="'Space Grotesk', 'Impact', sans-serif" font-size="110" font-weight="900" 
+        fill="#FF5500" fill-opacity="0.03" text-anchor="middle" letter-spacing="24">
+    GATEWAY
+  </text>
+</g>
+<g opacity="0.9">
+  <!-- Top-left bracket -->
+  <path d="M 40 70 L 40 40 L 70 40" fill="none" stroke="#FF5500" stroke-width="3" />
+  <!-- Top-right bracket -->
+  <path d="M 1850 40 L 1880 40 L 1880 70" fill="none" stroke="#D4FF00" stroke-width="3" />
+  <!-- Bottom-left bracket -->
+  <path d="M 40 1010 L 40 1040 L 70 1040" fill="none" stroke="#0052FF" stroke-width="3" />
+  <!-- Bottom-right bracket -->
+  <path d="M 1850 1040 L 1880 1040 L 1880 1010" fill="none" stroke="#FFD600" stroke-width="3" />
+</g>
+</svg>

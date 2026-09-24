@@ -4,7 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aayush Babu — Subdomain Gateway & Projects Hub</title>
-  <meta name="description" content="Central hub connecting all subdomains, developer projects, and web applications under aayushbabu.live." />
+  <meta name="description" content="Subdomain hub connecting developer tools, vulnerability search engines, and media portfolios under aayushbabu.live." />
+
+  <!-- Website Browser Icon: Cursor Loading -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="shortcut icon" href="/favicon.ico" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Aayush Babu — Subdomain Hub" />
@@ -12,27 +19,64 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://aayushbabu.live" />
 
+  <!-- Fonts: Space Grotesk, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Ambient Background Glow & Grid -->
+  <!-- Maximalist Wallpaper Background & Ambient Decorations -->
   <div class="bg-decorations">
-    <div class="bg-glow"></div>
     <div class="bg-grid"></div>
+  </div>
+
+  <!-- Side Technical Telemetry Rails -->
+  <div class="telemetry-rail-left">
+    SYS_ROUTER // AAYUSHBABU.LIVE // 0% PURPLE // HIGH-VOLTAGE
+  </div>
+  <div class="telemetry-rail-right">
+    SOLAR FLARE PALETTE // EST. 2026 // GATEWAY ONLINE
   </div>
 
   <div class="wrapper">
     <!-- Navbar Header -->
     <header class="navbar">
-      <a href="https://aayushbabu.live" class="brand">
+      <a href="https://aayushbabu.live" class="brand" title="Aayush Babu Gateway">
         <span class="brand-dot"></span>
         <span class="brand-name">AAYUSH BABU</span>
       </a>
 
+      <!-- Live System Status Badge with Cursor Loading Icon -->
+      <div class="system-status-badge" title="Live System Gateway Status">
+        <span class="cursor-icon-mini" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 32 32">
+            <!-- Spinner Ring in High-Voltage Solar Orange -->
+            <g class="cursor-spin-ring">
+              <circle cx="21" cy="21" r="7" fill="none" stroke="#FF5500" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="28 14"/>
+              <circle cx="28" cy="21" r="1.8" fill="#D4FF00" stroke="#000000" stroke-width="0.6"/>
+            </g>
+            <circle cx="21" cy="21" r="1.8" fill="#FFD600"/>
+            <!-- Arrow Cursor -->
+            <path d="M 3,2 L 3,21 L 7.5,16.5 L 11,24 L 14.2,22.4 L 10.7,15 L 17.5,15 Z" fill="#FFFFFF" stroke="#0a0c10" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="status-dot-live"></span>
+        <span>SOLAR // 3 ACTIVE</span>
+      </div>
+
       <div class="header-actions">
+        <!-- Command Palette Trigger Button -->
+        <button class="cmd-badge-btn" id="open-cmd-btn" title="Open Command Palette (Ctrl+K or /)">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span>Find</span>
+          <kbd>Ctrl K</kbd>
+        </button>
+
         <!-- Theme Toggle -->
-        <button class="icon-btn" id="theme-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+        <button class="icon-btn" id="theme-btn" title="Toggle Solar Dark / Solar Light Theme" aria-label="Toggle Theme">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="5"/>
             <line x1="12" y1="1" x2="12" y2="3"/>
@@ -43,8 +87,9 @@
             <line x1="21" y1="12" x2="23" y2="12"/>
           </svg>
         </button>
+
         <!-- GitHub Profile -->
-        <a href="https://github.com/aayushrambo8" target="_blank" rel="noopener noreferrer" class="icon-btn" title="GitHub Profile">
+        <a href="https://github.com/aayushrambo8" target="_blank" rel="noopener noreferrer" class="icon-btn" title="GitHub @aayushrambo8">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
           </svg>
@@ -55,29 +100,82 @@
     <!-- Hero Section -->
     <main>
       <section class="hero">
-        <div class="domain-badge">
-          🌐 aayushbabu.live
+        <div class="tech-flag">
+          <span>⚡ HIGH-VOLTAGE SOLAR ARCHITECTURE</span>
+          <span class="tech-flag-accent">0% PURPLE</span>
         </div>
         <h1 class="hero-title">
           Subdomain Gateway & <br />
-          <span class="brand-name">Projects Directory</span>
+          <span class="gradient-text">Projects Directory</span>
         </h1>
         <p class="hero-subtitle">
-          Direct access to web applications, developer projects, and media portfolios hosted across subdomains under <strong>aayushbabu.live</strong>.
+          Direct verified access to security search portals, interactive media portfolios, and web engines on 
+          <button class="domain-interactive-pill" id="copy-domain-btn" title="Click to copy root domain">
+            🌐 aayushbabu.live
+            <span class="copy-badge">COPY</span>
+          </button>
         </p>
+
+        <!-- Live Metrics Strip -->
+        <div class="metrics-strip">
+          <div class="metric-pill">
+            <span class="metric-label">Status:</span>
+            <span class="metric-value lime">🟢 100% ONLINE</span>
+          </div>
+          <div class="metric-pill">
+            <span class="metric-label">Subdomains:</span>
+            <span class="metric-value orange" id="metric-count">03 ROUTED</span>
+          </div>
+          <div class="metric-pill">
+            <span class="metric-label">Latency:</span>
+            <span class="metric-value cobalt">~14MS AVG</span>
+          </div>
+          <div class="metric-pill">
+            <span class="metric-label">Palette:</span>
+            <span class="metric-value orange">SOLAR / LIME</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Controls Toolbar (Search & Category Filtering) -->
+      <section class="controls-toolbar" aria-label="Directory Filters">
+        <div class="search-box">
+          <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input 
+            type="text" 
+            id="search-input" 
+            class="search-input" 
+            placeholder="Search subdomains, CVEs, stack (e.g. Python, UI, Game)..." 
+            autocomplete="off"
+            aria-label="Search directory"
+          />
+          <kbd class="search-kbd">/</kbd>
+        </div>
+
+        <div class="category-filters" id="category-filters" role="tablist">
+          <button class="filter-btn active" data-category="All" role="tab">All [3]</button>
+          <button class="filter-btn" data-category="Security" role="tab">🛡️ Security [1]</button>
+          <button class="filter-btn" data-category="Showcase" role="tab">🎨 Showcase [1]</button>
+          <button class="filter-btn" data-category="Games" role="tab">🕹️ Games [1]</button>
+        </div>
       </section>
 
       <!-- Subdomain Cards Showcase -->
-      <section class="cards-grid">
+      <section class="cards-grid" id="cards-grid">
         
-        <!-- CARD 1: EXPLOITDB -->
-        <article class="card" style="--card-glow: #10b981; --card-color: #10b981;">
+        <!-- CARD 1: EXPLOITDB (Acid Lime & Cyber Mint Accent) -->
+        <article class="card" data-category="Security" data-title="ExploitDB Search" data-tags="Security ExploitDB CVE Search Python Web API" style="--card-accent: #d4ff00; --card-color: #00e599;">
+          <span class="card-tech-id">[SUB.01]</span>
           <div>
             <div class="card-header">
-              <div class="card-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 11 12 14 22 4"/></svg>
+              <div class="card-icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 11 12 14 22 4"/></svg>
               </div>
               <div class="card-title-group">
+                <span class="card-category-badge">SECURITY // CVE SEARCH</span>
                 <h2 class="card-title">ExploitDB Search</h2>
                 <a href="https://exploitdb.aayushbabu.live" target="_blank" rel="noopener noreferrer" class="card-url">
                   exploitdb.aayushbabu.live ↗
@@ -87,13 +185,22 @@
 
             <div class="card-body">
               <p class="card-desc">
-                A search portal and vulnerability inspector for browsing CVEs, security exploits, and proof-of-concept security code.
+                High-performance search portal and vulnerability inspector for browsing CVEs, security exploits, and proof-of-concept security code.
               </p>
+
+              <div class="card-telemetry">
+                <span class="telemetry-status">
+                  <span class="ping-dot"></span> 14ms latency
+                </span>
+                <span class="tag">REST API</span>
+              </div>
+
               <div class="tech-tags">
                 <span class="tag">Security</span>
                 <span class="tag">ExploitDB</span>
                 <span class="tag">CVE Search</span>
                 <span class="tag">Python</span>
+                <span class="tag">Web API</span>
               </div>
             </div>
           </div>
@@ -109,14 +216,16 @@
           </div>
         </article>
 
-        <!-- CARD 2: MEDIA PORTFOLIO -->
-        <article class="card" style="--card-glow: #ec4899; --card-color: #ec4899;">
+        <!-- CARD 2: MEDIA PORTFOLIO (Solar Flare Orange & Sun Gold Accent) -->
+        <article class="card" data-category="Showcase" data-title="Media Portfolio" data-tags="JavaScript CSS3 HTML5 UI/UX Media Engine Design Video" style="--card-accent: #ff5500; --card-color: #ffd600;">
+          <span class="card-tech-id">[SUB.02]</span>
           <div>
             <div class="card-header">
-              <div class="card-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3z"/></svg>
+              <div class="card-icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3z"/></svg>
               </div>
               <div class="card-title-group">
+                <span class="card-category-badge">SHOWCASE // DIGITAL MEDIA</span>
                 <h2 class="card-title">Media Portfolio</h2>
                 <a href="https://portfolio.aayushbabu.live" target="_blank" rel="noopener noreferrer" class="card-url">
                   portfolio.aayushbabu.live ↗
@@ -126,13 +235,22 @@
 
             <div class="card-body">
               <p class="card-desc">
-                An interactive digital media portfolio showcasing creative design assets, artwork, UI projects, and video productions.
+                Interactive digital media showcase featuring creative visual design assets, UI components, artwork galleries, and video productions.
               </p>
+
+              <div class="card-telemetry">
+                <span class="telemetry-status">
+                  <span class="ping-dot"></span> 18ms latency
+                </span>
+                <span class="tag">Interactive</span>
+              </div>
+
               <div class="tech-tags">
                 <span class="tag">JavaScript</span>
                 <span class="tag">CSS3</span>
                 <span class="tag">HTML5</span>
                 <span class="tag">UI/UX</span>
+                <span class="tag">Media Engine</span>
               </div>
             </div>
           </div>
@@ -148,14 +266,16 @@
           </div>
         </article>
 
-        <!-- CARD 3: TICTACTOE -->
-        <article class="card" style="--card-glow: #06b6d4; --card-color: #06b6d4;">
+        <!-- CARD 3: TICTACTOE (Electric Cobalt Blue Accent) -->
+        <article class="card" data-category="Games" data-title="TicTacToe Game" data-tags="JavaScript HTML5 Canvas CSS3 Game Logic AI Singleplayer Multiplayer" style="--card-accent: #0052ff; --card-color: #00e599;">
+          <span class="card-tech-id">[SUB.03]</span>
           <div>
             <div class="card-header">
-              <div class="card-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+              <div class="card-icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
               </div>
               <div class="card-title-group">
+                <span class="card-category-badge">GAMES // CANVAS AI</span>
                 <h2 class="card-title">TicTacToe Game</h2>
                 <a href="https://tictactoe.aayushbabu.live" target="_blank" rel="noopener noreferrer" class="card-url">
                   tictactoe.aayushbabu.live ↗
@@ -165,8 +285,16 @@
 
             <div class="card-body">
               <p class="card-desc">
-                A sleek, interactive Tic-Tac-Toe web game featuring single player AI mode, local multiplayer, and smooth animations.
+                Fast, responsive interactive Tic-Tac-Toe web game featuring single player AI mode, local multiplayer, and smooth canvas animations.
               </p>
+
+              <div class="card-telemetry">
+                <span class="telemetry-status">
+                  <span class="ping-dot"></span> 12ms latency
+                </span>
+                <span class="tag">Turn-Based</span>
+              </div>
+
               <div class="tech-tags">
                 <span class="tag">JavaScript</span>
                 <span class="tag">HTML5 Canvas</span>
@@ -188,6 +316,16 @@
         </article>
 
       </section>
+
+      <!-- Empty State for Search Filter -->
+      <div id="empty-state" style="display: none; text-align: center; padding: 4rem 1rem;">
+        <p style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--solar-orange); margin-bottom: 0.5rem;">
+          No matching subdomains found
+        </p>
+        <p style="color: var(--text-muted); font-family: var(--font-mono); font-size: 0.9rem;">
+          Try searching for another keyword or clear your filter.
+        </p>
+      </div>
     </main>
 
     <!-- Footer -->
@@ -195,23 +333,248 @@
       <div>
         <span>&copy; 2026 <strong>Aayush Babu</strong> &bull; <a href="https://aayushbabu.live" class="footer-link">aayushbabu.live</a></span>
       </div>
-      <div>
+      <div class="footer-telemetry">
+        <span class="footer-badge-dot"></span>
+        <span>PALETTE: SOLAR FLARE // 0% PURPLE</span>
+        <span>&bull;</span>
         <a href="https://github.com/aayushrambo8" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub @aayushrambo8</a>
       </div>
     </footer>
   </div>
 
-  <!-- Minimal Theme Switcher Script -->
+  <!-- Command Palette Modal -->
+  <div class="modal-overlay" id="cmd-modal-overlay" aria-hidden="true">
+    <div class="cmd-modal" role="dialog" aria-modal="true" aria-label="Command Palette">
+      <div class="cmd-header">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="cmd-input" class="cmd-search-input" placeholder="Type a command or subdomain..." />
+        <button class="cmd-close-btn" id="cmd-close-btn" aria-label="Close Command Palette">&times;</button>
+      </div>
+      <ul class="cmd-list" id="cmd-list">
+        <li class="cmd-item" data-url="https://exploitdb.aayushbabu.live">
+          <div class="cmd-item-info">
+            <span>🛡️ ExploitDB Search</span>
+          </div>
+          <span class="cmd-item-badge">exploitdb.aayushbabu.live ↗</span>
+        </li>
+        <li class="cmd-item" data-url="https://portfolio.aayushbabu.live">
+          <div class="cmd-item-info">
+            <span>🎨 Media Portfolio</span>
+          </div>
+          <span class="cmd-item-badge">portfolio.aayushbabu.live ↗</span>
+        </li>
+        <li class="cmd-item" data-url="https://tictactoe.aayushbabu.live">
+          <div class="cmd-item-info">
+            <span>🕹️ TicTacToe Game</span>
+          </div>
+          <span class="cmd-item-badge">tictactoe.aayushbabu.live ↗</span>
+        </li>
+        <li class="cmd-item" data-url="https://github.com/aayushrambo8">
+          <div class="cmd-item-info">
+            <span>💻 GitHub Profile</span>
+          </div>
+          <span class="cmd-item-badge">@aayushrambo8 ↗</span>
+        </li>
+        <li class="cmd-item" id="cmd-toggle-theme">
+          <div class="cmd-item-info">
+            <span>🌓 Toggle Solar Theme (Dark / Light)</span>
+          </div>
+          <span class="cmd-item-badge">Action</span>
+        </li>
+      </ul>
+      <div class="cmd-footer">
+        <span>Navigation: <kbd>↑</kbd> <kbd>↓</kbd></span>
+        <span>Select: <kbd>Enter</kbd></span>
+        <span>Close: <kbd>Esc</kbd></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D4FF00" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+    <span id="toast-text">Domain copied to clipboard!</span>
+  </div>
+
+  <!-- Interactive Logic -->
   <script>
     (function() {
+      // 1. Theme Management (Solar Dark / Solar Light)
       const themeBtn = document.getElementById('theme-btn');
-      let theme = localStorage.getItem('theme') || 'dark';
-      document.documentElement.setAttribute('data-theme', theme);
+      let currentTheme = localStorage.getItem('sh_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', currentTheme);
 
-      themeBtn.addEventListener('click', () => {
-        theme = theme === 'dark' ? 'light' : 'dark';
-        document.documentElement.setAttribute('data-theme', theme);
-        localStorage.setItem('theme', theme);
+      function toggleTheme() {
+        currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        localStorage.setItem('sh_theme', currentTheme);
+      }
+      themeBtn.addEventListener('click', toggleTheme);
+
+      // 2. Toast Utility
+      const toast = document.getElementById('toast');
+      const toastText = document.getElementById('toast-text');
+      let toastTimer = null;
+      function showToast(message) {
+        toastText.textContent = message;
+        toast.classList.add('show');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => {
+          toast.classList.remove('show');
+        }, 2500);
+      }
+
+      // 3. Copy Domain Button
+      const copyBtn = document.getElementById('copy-domain-btn');
+      if (copyBtn) {
+        copyBtn.addEventListener('click', async () => {
+          try {
+            await navigator.clipboard.writeText('https://aayushbabu.live');
+            showToast('Copied https://aayushbabu.live to clipboard!');
+          } catch (e) {
+            showToast('aayushbabu.live');
+          }
+        });
+      }
+
+      // 4. Instant Search & Category Filtering
+      const searchInput = document.getElementById('search-input');
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const cards = document.querySelectorAll('.card');
+      const emptyState = document.getElementById('empty-state');
+      const metricCount = document.getElementById('metric-count');
+      let activeCategory = 'All';
+
+      function filterCards() {
+        const query = (searchInput.value || '').trim().toLowerCase();
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const cat = card.getAttribute('data-category');
+          const title = (card.getAttribute('data-title') || '').toLowerCase();
+          const tags = (card.getAttribute('data-tags') || '').toLowerCase();
+          const desc = card.querySelector('.card-desc') ? card.querySelector('.card-desc').textContent.toLowerCase() : '';
+          const url = card.querySelector('.card-url') ? card.querySelector('.card-url').textContent.toLowerCase() : '';
+
+          const matchesCategory = activeCategory === 'All' || cat === activeCategory;
+          const matchesQuery = !query || title.includes(query) || tags.includes(query) || desc.includes(query) || url.includes(query);
+
+          if (matchesCategory && matchesQuery) {
+            card.style.display = 'flex';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        if (emptyState) {
+          emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
+        }
+        if (metricCount) {
+          metricCount.textContent = `0${visibleCount} ROUTED`;
+        }
+      }
+
+      if (searchInput) {
+        searchInput.addEventListener('input', filterCards);
+      }
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeCategory = btn.getAttribute('data-category');
+          filterCards();
+        });
+      });
+
+      // 5. Command Palette (Ctrl+K or /)
+      const cmdOverlay = document.getElementById('cmd-modal-overlay');
+      const openCmdBtn = document.getElementById('open-cmd-btn');
+      const closeCmdBtn = document.getElementById('cmd-close-btn');
+      const cmdInput = document.getElementById('cmd-input');
+      const cmdList = document.getElementById('cmd-list');
+      const cmdThemeToggle = document.getElementById('cmd-toggle-theme');
+
+      function openCommandPalette() {
+        if (!cmdOverlay) return;
+        cmdOverlay.classList.add('active');
+        cmdOverlay.setAttribute('aria-hidden', 'false');
+        if (cmdInput) {
+          cmdInput.value = '';
+          cmdInput.focus();
+        }
+        filterCmdList('');
+      }
+
+      function closeCommandPalette() {
+        if (!cmdOverlay) return;
+        cmdOverlay.classList.remove('active');
+        cmdOverlay.setAttribute('aria-hidden', 'true');
+      }
+
+      if (openCmdBtn) openCmdBtn.addEventListener('click', openCommandPalette);
+      if (closeCmdBtn) closeCmdBtn.addEventListener('click', closeCommandPalette);
+
+      if (cmdOverlay) {
+        cmdOverlay.addEventListener('click', (e) => {
+          if (e.target === cmdOverlay) closeCommandPalette();
+        });
+      }
+
+      if (cmdThemeToggle) {
+        cmdThemeToggle.addEventListener('click', () => {
+          toggleTheme();
+          closeCommandPalette();
+          showToast(`Switched theme to ${currentTheme}`);
+        });
+      }
+
+      // Filter Command Palette Items
+      function filterCmdList(query) {
+        const q = query.toLowerCase().trim();
+        const items = cmdList.querySelectorAll('.cmd-item');
+        items.forEach(item => {
+          const text = item.textContent.toLowerCase();
+          item.style.display = !q || text.includes(q) ? 'flex' : 'none';
+        });
+      }
+
+      if (cmdInput) {
+        cmdInput.addEventListener('input', (e) => {
+          filterCmdList(e.target.value);
+        });
+      }
+
+      // Click to launch from Command Palette
+      if (cmdList) {
+        cmdList.addEventListener('click', (e) => {
+          const item = e.target.closest('.cmd-item');
+          if (!item) return;
+          const url = item.getAttribute('data-url');
+          if (url) {
+            window.open(url, '_blank', 'noopener,noreferrer');
+            closeCommandPalette();
+          }
+        });
+      }
+
+      // Keyboard Shortcuts: Ctrl+K, /, Esc
+      document.addEventListener('keydown', (e) => {
+        if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+          e.preventDefault();
+          if (cmdOverlay && cmdOverlay.classList.contains('active')) {
+            closeCommandPalette();
+          } else {
+            openCommandPalette();
+          }
+        } else if (e.key === '/' && document.activeElement !== searchInput && document.activeElement !== cmdInput) {
+          e.preventDefault();
+          if (searchInput) searchInput.focus();
+        } else if (e.key === 'Escape') {
+          closeCommandPalette();
+          if (searchInput) searchInput.blur();
+        }
       });
     })();
   </script>
