@@ -1,0 +1,50 @@
+{
+  "rootDomain": "aayushbabu.live",
+  "subdomains": [
+    {
+      "id": "sub-exploitdb",
+      "name": "ExploitDB Search Directory",
+      "subdomain": "exploitdb",
+      "category": "Security",
+      "status": "online",
+      "description": "Exploit database search portal and vulnerability inspector. Repository: https://github.com/aayushrambo8/ExploitDB-Website",
+      "githubUrl": "https://github.com/aayushrambo8/ExploitDB-Website",
+      "techStack": ["Security", "ExploitDB", "CVE Search", "Python", "REST API"],
+      "icon": "shield-check",
+      "pingMs": 14,
+      "isPinned": true,
+      "colorAccent": "#10b981",
+      "endpoints": ["/search", "/cve/lookup", "/exploits/raw", "/api/v1/search"]
+    },
+    {
+      "id": "sub-portfolio",
+      "name": "Media Portfolio Showcase",
+      "subdomain": "portfolio",
+      "category": "Showcase",
+      "status": "online",
+      "description": "Interactive digital media portfolio showcasing creative design assets, artwork, and video productions. Repository: https://github.com/aayushrambo8/Media-Portfolio",
+      "githubUrl": "https://github.com/aayushrambo8/Media-Portfolio",
+      "techStack": ["JavaScript", "CSS3", "HTML5", "UI/UX Design", "Media Engine"],
+      "icon": "sparkles",
+      "pingMs": 18,
+      "isPinned": true,
+      "colorAccent": "#ec4899",
+      "endpoints": ["/gallery", "/projects", "/video-showcase", "/about"]
+    },
+    {
+      "id": "sub-tictactoe",
+      "name": "TicTacToe Web Game",
+      "subdomain": "tictactoe",
+      "category": "Games",
+      "status": "online",
+      "description": "Sleek interactive Tic-Tac-Toe web game featuring single player AI and local multiplayer modes. Repository: https://github.com/aayushrambo8/TicTacToe",
+      "githubUrl": "https://github.com/aayushrambo8/TicTacToe",
+      "techStack": ["JavaScript", "HTML5 Canvas", "CSS Animations", "Game Logic"],
+      "icon": "grid",
+      "pingMs": 12,
+      "isPinned": true,
+      "colorAccent": "#06b6d4",
+      "endpoints": ["/play", "/singleplayer", "/multiplayer", "/stats"]
+    }
+  ]
+}

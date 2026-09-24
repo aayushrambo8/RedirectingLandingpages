@@ -1,0 +1,14 @@
+{
+  "name": "aayushbabu-subdomain-hub",
+  "version": "1.0.0",
+  "description": "Subdomain Hub Landing Page for aayushbabu.live",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 3000",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0"
+  }
+}
