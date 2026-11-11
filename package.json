@@ -1,14 +1,26 @@
 {
   "name": "aayushbabu-subdomain-hub",
-  "version": "1.0.0",
-  "description": "Subdomain Hub Landing Page for aayushbabu.live",
+  "version": "2.0.0",
+  "description": "Subdomain Hub Gateway & Directory for aayushbabu.live",
   "type": "module",
   "scripts": {
-    "dev": "vite --host 0.0.0.0 --port 3000",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.3.5",
+    "lucide-react": "^1.72.0",
+    "next": "^15.5.29",
+    "postcss": "^8.5.32",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "tailwindcss": "^4.3.5"
   },
   "devDependencies": {
-    "vite": "^6.2.0"
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^5.9.3"
   }
 }
