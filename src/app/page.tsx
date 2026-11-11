@@ -7,8 +7,7 @@ import { DEFAULT_SUBDOMAINS, DEFAULT_ROOT_DOMAIN } from '@/data/defaultSubdomain
 import {
   ExternalLink,
   Copy,
-  Check,
-  Search,
+  Check, Search,
   X,
   ShieldCheck,
   Sparkles,
