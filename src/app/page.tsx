@@ -149,11 +149,6 @@ export default function SubdomainHubPage() {
 
           {/* Hero Section */}
           <section className="relative pt-12 pb-8 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center space-y-5">
-            {/* Pill */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 text-xs font-mono font-medium shadow-xs shadow-emerald-500/10">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-              <span>PRODUCTION VERIFIED // SUBDOMAIN DIRECTORY</span>
-            </div>
 
             {/* Main Title */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-slate-900 dark:text-white leading-[1.1]">
@@ -168,70 +163,6 @@ export default function SubdomainHubPage() {
               Explore verified web applications, vulnerability search engines, and interactive media portfolios hosted under{' '}
               <span className="font-bold text-slate-900 dark:text-white">{DEFAULT_ROOT_DOMAIN}</span>.
             </p>
-
-            {/* Interactive Domain Pill */}
-            <div className="pt-2 flex items-center justify-center">
-              <button
-                onClick={handleCopyHero}
-                type="button"
-                className="group inline-flex items-center gap-2.5 px-5 py-2.5 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 hover:border-emerald-500/50 text-slate-900 dark:text-slate-100 font-mono text-sm shadow-lg shadow-black/5 dark:shadow-emerald-950/20 backdrop-blur-md transition-all hover:scale-[1.02] cursor-pointer"
-                title="Click to copy root URL"
-              >
-                <span className="text-emerald-600 dark:text-emerald-400 font-bold">https://</span>
-                <span className="font-extrabold tracking-tight">{DEFAULT_ROOT_DOMAIN}</span>
-                <span className="ml-1 text-slate-400 group-hover:text-emerald-500 transition-colors">
-                  {heroCopied ? (
-                    <Check className="w-4 h-4 text-emerald-500" />
-                  ) : (
-                    <Copy className="w-4 h-4" />
-                  )}
-                </span>
-              </button>
-            </div>
-
-            {/* Quick Search & Filters */}
-            <div className="pt-6 max-w-xl mx-auto space-y-3">
-              <div className="relative">
-                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
-                  <Search className="w-4 h-4" />
-                </div>
-                <input
-                  type="text"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="Filter by name, CVE, Python, Canvas, stack..."
-                  className="w-full pl-11 pr-10 py-3 rounded-2xl border border-slate-200 dark:border-slate-800/80 bg-white/95 dark:bg-slate-900/90 text-slate-900 dark:text-white placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500 transition-all shadow-md backdrop-blur-xl"
-                />
-                {searchQuery && (
-                  <button
-                    onClick={() => setSearchQuery('')}
-                    className="absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
-                  >
-                    <X className="w-4 h-4" />
-                  </button>
-                )}
-              </div>
-
-              {/* Category buttons */}
-              <div className="flex items-center justify-center gap-2">
-                {categories.map((cat) => {
-                  const isActive = activeCategory === cat;
-                  return (
-                    <button
-                      key={cat}
-                      onClick={() => setActiveCategory(cat)}
-                      className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
-                        isActive
-                          ? 'bg-emerald-500 text-slate-950 shadow-md shadow-emerald-500/25 font-bold scale-105'
-                          : 'bg-white/80 dark:bg-slate-900/80 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800'
-                      }`}
-                    >
-                      {cat}
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
           </section>
 
           {/* Subdomains Showcase Grid */}
